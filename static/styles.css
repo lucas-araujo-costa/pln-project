@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4; /* Cor de fundo clara para destacar a borda */
+}
+.home { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9; /* Fundo mais claro, seguindo o esquema anterior */
+  font-size: 20px;
+  padding: 10px;
+  border: 5px solid #007BFF; /* Bordas em azul, como nos blocos de conteúdo */
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para efeito de profundidade */
+}
+.titulo{
+  font-size: 30px;
+  padding: 10px;
+  background-color: #007BFF; /* Azul padrão usado em outros elementos */
+  color: white; /* Texto branco para contraste */
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.botao-ef {
+  margin-top: 10px;
+}
+
+.botao-ef #tuamae {
+  width: 100%;
+  background-color: #0056b3; /* Azul mais escuro para o botão */
+  color: white; /* Texto branco para contraste */
+  padding: 10px 20px; /* Padding adequado para um botão */
+  border: none; /* Sem borda para um visual mais limpo */
+  border-radius: 4px;
+  cursor: pointer; /* Efeito de cursor para indicar que é clicável */
+  transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+.botao-ef #tuamae:hover {
+  background-color: #003d7a; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos básicos para todo o corpo e a configuração do contêiner */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando o título principal */
+.titulo-principal {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+/* Estilos para os blocos de conteúdo */
+.content-block {
+  background: #f9f9f9;
+  border-left: 5px solid #007BFF;
+  margin: 20px 0;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando o link de voltar */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #007BFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* Adicionando espaço extra ao redor do link para evitar colagem aos outros elementos */
+a[href="/"] {
+  display: block;
+  text-align: center;
+  width: auto;
+}
+
+/* Estilos adicionais para ajustes de layout e responsividade */
+@media (min-width: 768px) {
+  .container {
+      width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      width: 90%;
+  }
+
+  .titulo-principal {
+      font-size: 18px;
+  }
+}

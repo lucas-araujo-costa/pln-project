@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Upload de Documento</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+	<div class="home">
+		<div class="titulo">
+			<h1>Upload de Documento</h1>
+		</div>
+
+		<p>Selecione o documento que deseja verificar a correção ortográfica</p>
+
+		<form action="/uploader" method="post" enctype="multipart/form-data">
+			<div class="botao-ef">
+				<input type="file" name="file"><br><br>
+				<input id="tuamae" type="submit" value="Upload">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
